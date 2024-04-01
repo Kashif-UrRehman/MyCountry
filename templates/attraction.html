@@ -1,0 +1,137 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<main>
+
+<!-- Section: Magazine v.3 -->
+<section class="magazine-section my-5">
+<div class="row flex-center" style="margin-top:1%">
+<h4 class="text-center">Attractions Section</h4>
+</div>
+    <!-- Grid row -->
+  <div class="row">
+    <!-- Grid column 1-->
+    <div class="col-lg-4 col-md-6 mb-0">
+
+      <!-- Featured news -->
+      <div class="single-news mb-3">
+
+        <!-- Image -->
+        <div class="view overlay rounded z-depth-2 mb-4">
+         <a href="fort"> <img class="img-fluid" src="../static/public/img/Slides/lahorefort.jpg" alt="Sample image"></a>
+          <a href="fort">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-12">
+
+            <!-- Badge -->
+
+              <a href="{{ url_for('fort') }}"><button type="button" class="btn btn-primary">Lahore Fort <span class="badge badge-danger ml-2"></span>
+              </button></a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Featured news -->
+
+
+
+    </div>
+    <!-- Grid column 1-->
+
+
+	 <!-- Grid column 2-->
+    <div class="col-lg-4 col-md-6 mb-0">
+
+      <!-- Featured news -->
+      <div class="single-news mb-3">
+
+        <!-- Image -->
+        <div class="view overlay rounded z-depth-2 mb-4">
+         <a href="minar"> <img class="img-fluid" src="../static/public/img/Slides/minar.jpg" alt="Sample image"></a>
+          <a href="minar">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-12">
+
+            <!-- Badge -->
+             <a href="{{ url_for('minar') }}"><button type="button" class="btn btn-primary">Minar-e-Pakistan <span class="badge badge-danger ml-2"></span>
+              </button></a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Featured news -->
+
+
+
+    </div>
+    <!-- Grid column 2-->
+
+
+	 <!-- Grid column 3-->
+    <div class="col-lg-4 col-md-6 mb-0">
+
+      <!-- Featured news -->
+      <div class="single-news mb-3">
+
+        <!-- Image -->
+        <div class="view overlay rounded z-depth-2 mb-4">
+         <a href="badshah"> <img class="img-fluid" src="../static/public/img/Slides/mosque.jpg" alt="Sample image"></a>
+          <a href="badshah">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-12">
+
+            <!-- Badge -->
+                 <a href="{{ url_for('badshah') }}"><button type="button" class="btn btn-primary">Badshah-e-Mosque <span class="badge badge-danger ml-2"></span>
+                  </button></a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Featured news -->
+
+
+
+    </div>
+    <!-- Grid column 3-->
+
+
+
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Magazine v.3 -->
+</main>
+
+{% endblock %}

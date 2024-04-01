@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1 xmlns="http://www.w3.org/1999/html">Dashboard<small>  Welcome  {{ username }}</small></h1>
+
+<a class="=btn btn-success btn-lg" href="/add_article">Add Article/Post </a>
+
+<hr>
+
+<table class="table table-striped">
+<thead><tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th></th>
+        </tr>
+</thead>
+{% for article in article %}
+    {% if username == article.author %}
+<tr>
+        <td>{{ article.title }}</td>
+        <td>{{ article.author }}</td>
+
+<td>
+<form action="{{ url_for('delete_article', id =article.id)}}" method = "POST">
+<input type="hidden" name="_method" value="DELETE">
+<input type="submit" value="DELETE" class="btn btn-danger pull-right">
+</form></td>
+</tr>
+    {% endif %}
+{% endfor %}
+</table>
+
+{% endblock %}

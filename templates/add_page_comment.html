@@ -1,0 +1,15 @@
+{% block body %}
+{% from "include/_formhelper.html" import render_field %}
+
+<form method="POST" action="">
+<div class="form-group">
+    {{ render_field(form.comment, class_="form-control") }}
+</div>
+
+<p>
+<input type="submit" class="btn btn-primary" value="Submit">
+</p>
+</form>
+
+{% include 'include/page_comments.html' %}
+{% endblock %}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pakistan</title>
+    <!--<link href="public/css/bootstrap.css" rel="stylesheet" />-->
+    <!--<link href="public/css/bootstrap-theme.css" rel="stylesheet" />-->
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--Favicon and touch icons-->
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="../static/public/img/pkicon.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../static/public/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../static/public/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../static/public/css/animate.css" rel="stylesheet">
+    <link href="../static/public/css/compiled.min.css" rel="stylesheet">
+    <link href="../static/public/css/css-loader.css" rel="stylesheet">
+    <link href="../static/public/css/mdb.min.css" rel="stylesheet">
+    <link href="../static/public/css/fullcalendar.min.css" rel="stylesheet">
+    <link href="../static/public/css/jquery-jvectormap-2.0.3.css" rel="stylesheet">
+
+    <link href="../static/public/css/style.css" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="../static/public/css/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <!-- Your custom styles (optional) -->
+    <style>
+        .view{
+            height: 120%;
+
+}
+    </style>
+
+</head>
+
+<body>
+
+{% include 'include/_navbar.html' %}
+
+<div class="jumbotron">
+    {% include 'include/_messages.html' %}
+    {% block body %} {% endblock %}
+</div>
+
+{% include 'include/_footer.html' %}
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+<!--<script src="//cdn.ckeditor.com/4.11.1/basic/ckeditor.js"></script>-->
+
+<!-- JQuery -->
+<script type="text/javascript" src="../static/public/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../static/public/js/popper.min.js"></script>
+<script type="text/javascript" src="../static/public/js/bootstrap.js"></script>
+<script type="text/javascript" src="../static/public/js/mdb.min.js"></script>
+<!-- MDBootstrap Calenders  -->
+<script type="text/javascript" src="../static/public/js/fullcalendar-3.4.0/fullcalendar.min.js"></script>
+<script type="text/javascript" src="../static/public/js/fullcalendar-3.4.0/lib/moment.min.js"></script>
+<!-- MDBootstrap Google Maps  -->
+<script type="text/javascript" src="../public/js/google-maps/jquery-jvectormap-2.0.3.min.js"></script>
+<script type="text/javascript" src="../public/js/google-maps/jquery-jvectormap-world-mill.js"></script>
+<!-- MDBootstrap Profile  -->
+<script type="text/javascript" src="../public/js/tinymce/tinymce.min.js"></script>
+<!-- MDBootstrap Datatables  -->
+<script type="text/javascript" src="../public/js/datatables/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="../public/js/datatables/jquery.dataTables.min.js"></script>
+<!--Custom scripts-->
+
+<script src="//cdn.ckeditor.com/4.11.1/basic/ckeditor.js"></script>
+<script type="text/javascript">
+  CKEDITOR.replace('editor')
+
+</script>
+
+
+</body>
+</html>

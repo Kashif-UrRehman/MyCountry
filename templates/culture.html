@@ -1,0 +1,140 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<main>
+
+<!-- Section: Magazine v.3 -->
+<section class="magazine-section">
+<div class="row flex-center" style="margin-top:2%">
+<h4 class="text-center">Culture Section</h4>
+</div>
+  <!-- Grid row -->
+  <div class="row">
+    <!-- Grid column 1-->
+    <div class="col-lg-4 col-md-6 mb-0">
+
+      <!-- Featured news -->
+      <div class="single-news mb-3">
+
+        <!-- Image -->
+        <div class="view overlay rounded z-depth-2 mb-4">
+         <a href="islam"> <img class="img-fluid" src="../static/public/img/Slides/culture(1).jpg" alt="Sample image"></a>
+          <a href="islam">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-12">
+
+            <!-- Button -->
+
+              <a href="{{  url_for('islam') }}"><button type="button" class="btn btn-primary">Islam <span class="badge badge-danger ml-2"></span>
+              </button></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Featured news -->
+
+
+
+    </div>
+    <!-- Grid column 1-->
+
+
+	 <!-- Grid column 2-->
+    <div class="col-lg-4 col-md-6 mb-0">
+
+      <!-- Featured news -->
+      <div class="single-news mb-3">
+
+        <!-- Image -->
+        <div class="view overlay rounded z-depth-2 mb-4">
+         <a href="dress"> <img class="img-fluid" height="20px" src="../static/public/img/Slides/culture(2).jpg" alt="Sample image"></a>
+          <a href="dress"><div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-12">
+
+            <!-- Badge -->
+            <a href="{{ url_for('dress')}}"><button type="button" class="btn btn-primary">Traditional Dress<span class="badge badge-danger ml-2"></span>
+              </button>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Featured news -->
+
+
+
+    </div>
+    <!-- Grid column 2-->
+
+
+	 <!-- Grid column 3-->
+    <div class="col-lg-4 col-md-6 mb-0">
+
+      <!-- Featured news -->
+      <div class="single-news mb-3">
+
+        <!-- Image -->
+        <div class="view overlay rounded z-depth-2 mb-4">
+         <a href="social"> <img class="img-fluid" src="../static/public/img/Slides/culture(3).jpg" alt="Sample image"></a>
+          <a href="social">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-12">
+
+            <!-- Badge -->
+            <a href="social"><button type="button" class="btn btn-primary">Social Satisfaction <span class="badge badge-danger ml-2"></span>
+              </button>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+
+        <!-- Grid row -->
+      </div>
+      <!-- Featured news -->
+
+
+
+    </div>
+    <!-- Grid column 3-->
+
+
+
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Magazine v.3 -->
+
+
+
+
+
+<!-- comment -->
+</main>
+
+{% endblock %}

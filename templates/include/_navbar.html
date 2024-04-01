@@ -1,0 +1,70 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark default-color-dark mb-5">
+
+    <div class="nav-header">
+    <!-- Navbar brand -->
+     <a class="active mr-2" href="/"><img height="20px" src="../static/public/img/pkicon.png"></a>
+    <a class="active text-white mr-2" href="/">My Country</a>
+    </div>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/articles">User Posts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/guest">Guest Book</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/history">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lahore">Lahore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dishes">Dishes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/culture">Culture</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/attraction">Attraction</a>
+            </li>
+
+
+        </ul>
+        <!-- Links -->
+
+
+        <div class="md-form my-0">
+            <ul class="navbar-nav navbar-right">
+                {% if current_user.is_authenticated %}
+                <li class="nav-item"><a class="nav-link" href="/dashboard"><span class="glyphicon glyphicon-dashboard"></span>Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                <!--<li><a href="/dashboard"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>-->
+                <!--<li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>-->
+                {% else %}
+                <li class="nav-item"><a class="nav-link" href="/register"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                <!--<li><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+                <!--<li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                {% endif %}
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Collapsible content -->
+
+</nav>
+
